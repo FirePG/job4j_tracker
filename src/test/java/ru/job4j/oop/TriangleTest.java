@@ -1,6 +1,7 @@
 package ru.job4j.oop;
 
 import org.junit.jupiter.api.Test;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.offset;
 
@@ -15,8 +16,9 @@ public class TriangleTest {
         double expected = 8;
         assertThat(result).isCloseTo(expected, offset(0.001));
     }
-@Test
-    public void when00and40and04Thenminus1() {
+
+    @Test
+    public void when00and40and30Thenminus1() {
         Point a = new Point(0, 0);
         Point b = new Point(4, 0);
         Point c = new Point(3, 0);
