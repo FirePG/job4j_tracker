@@ -13,4 +13,3 @@ public class Max {
         return max(first, max(second, third, four));
     }
 }
-
