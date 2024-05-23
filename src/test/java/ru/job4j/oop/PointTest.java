@@ -6,11 +6,11 @@ import static org.assertj.core.api.Assertions.*;
 
 class PointTest {
     @Test
-    void when50to20then3() {
+    void when503to203then3() {
         double expected = 3;
-        Point first = new Point(5, 0);
-        Point second = new Point(2, 0);
-        double output = first.distance(second);
+        Point c = new Point(5, 0,3);
+        Point d = new Point(2, 0,3);
+        double output = c.distance3d(d);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
@@ -24,11 +24,11 @@ class PointTest {
     }
 
     @Test
-    void when31to21then1() {
-        double expected = 1;
-        Point a = new Point(3, 1);
-        Point b = new Point(2, 1);
-        double output = a.distance(b);
+    void when523to521then1() {
+        double expected = 2;
+        Point c = new Point(5, 2, 3);
+        Point d = new Point(5, 2, 1);
+        double output = c.distance3d(d);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
