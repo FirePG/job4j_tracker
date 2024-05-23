@@ -1,15 +1,14 @@
 package ru.job4j.oop;
 
 import org.junit.jupiter.api.Test;
-
 import static org.assertj.core.api.Assertions.*;
 
 class PointTest {
     @Test
     void when503to203then3() {
         double expected = 3;
-        Point c = new Point(5, 0,3);
-        Point d = new Point(2, 0,3);
+        Point c = new Point(5, 0, 3);
+        Point d = new Point(2, 0, 3);
         double output = c.distance3d(d);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
@@ -40,5 +39,4 @@ class PointTest {
         double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
-
 }
