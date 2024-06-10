@@ -14,9 +14,12 @@ public class Item {
         this.name = name;
     }
 
-    public Item(String name, int id, LocalDateTime created) {
+    public Item(String name, int id) {
         this.name = name;
         this.id = id;
+    }
+
+    public Item(LocalDateTime created) {
         this.created = created;
     }
 
