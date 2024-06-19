@@ -25,4 +25,3 @@ public class Book {
         this.amount = amount;
     }
 }
-
